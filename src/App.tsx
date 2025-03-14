@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 
-import { Basic } from "./pembelajaran/basic/animate/1.properti-animate/AnimasiDasar";
+import { AnimasiDasar } from "./pembelajaran/basic/animate/1.properti-animate/AnimasiDasar";
 import { Transform } from "./pembelajaran/basic/animate/2.transformasi/Transformasi";
 import { XAndYRule } from "./pembelajaran/basic/animate/3.xandy/xandy";
 import { Colors } from "./pembelajaran/basic/animate/4.colors/colors";
@@ -18,7 +18,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/AnimasiDasar" element={<Basic />} />
+        <Route path="/AnimasiDasar" element={<AnimasiDasar />} />
         <Route path="/transform" element={<Transform />} />
         <Route path="/xandyrule" element={<XAndYRule />} />
         <Route path="/colors" element={<Colors />} />
